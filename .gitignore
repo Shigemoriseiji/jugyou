@@ -1,0 +1,16 @@
+# dotfiles（Git自身の .git は除外される）
+.*
+!.gitignore
+
+# 環境・ログ・一時
+.env
+*.log
+*.tar.gz
+*.zip
+
+# Composer / Node（該当するなら）
+vendor/
+node_modules/
+
+# アップロード先（本番で生成されるもの）
+public/upload/
