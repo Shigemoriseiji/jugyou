@@ -50,6 +50,10 @@ cd jugyou
 
 ### (1) SQL
 ```sql
+docker compose up -d
+
+docker compose exec mysql mysql example_db
+
 CREATE TABLE IF NOT EXISTS `bbs_entries` (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `body` TEXT NOT NULL,
