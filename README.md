@@ -52,6 +52,7 @@ cd jugyou
 ```sql
 docker compose up -d
 
+(一度エラーが出ることがありますが、二回目を実行すると起動します）
 docker compose exec mysql mysql example_db
 
 CREATE TABLE IF NOT EXISTS `bbs_entries` (
@@ -78,6 +79,6 @@ docker ps
 ```
 
 **アクセス:**
-- アプリ: `http://<EC2_PUBLIC_IP>/`  
+- アプリ: `http://<EC2_PUBLIC_IP>/bbsimagetest.php`  
 - phpMyAdmin: `http://<EC2_PUBLIC_IP>:8080/` （追加した場合）
 
